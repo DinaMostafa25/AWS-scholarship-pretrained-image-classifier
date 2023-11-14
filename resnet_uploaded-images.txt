@@ -1,0 +1,76 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                  beagle_02.jpg  label:                     beagle
+ 2 key:                  beagle_01.jpg  label:                     beagle
+ 3 key:                   coffe_01.jpg  label:                      coffe
+ 4 key:                    forg_01.jpg  label:                       forg
+
+     MATCH:
+
+                  coffe_01.jpg: 
+Real:                      coffe   Classifier:                     coffee mug
+
+ NOT A MATCH:
+
+                 beagle_02.jpg: 
+Real:                     beagle   Classifier:               english foxhound
+
+                 beagle_01.jpg: 
+Real:                     beagle   Classifier:               english foxhound
+
+                   forg_01.jpg: 
+Real:                       forg   Classifier:           tree frog, tree-frog
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                  coffe_01.jpg: 
+Real:                      coffe   Classifier:                     coffee mug  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                 beagle_02.jpg: 
+Real:                     beagle   Classifier:               english foxhound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 beagle_01.jpg: 
+Real:                     beagle   Classifier:               english foxhound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                   forg_01.jpg: 
+Real:                       forg   Classifier:           tree frog, tree-frog  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture RESNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not_Dog Images    :   2
+
+
+ 
+Breed missclassifications happened:
+
+Image label :  beagle     Classifier  label :  english foxhound 
+
+Image label :  beagle     Classifier  label :  english foxhound 
+
+
+Total Elapsed Runtime: 0:0:4
